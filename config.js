@@ -1,11 +1,11 @@
+function getContacts() {
+    return JSON.parse(localStorage.getItem('contacts') || '[]');
+}
 
+function saveContacts(contacts) {
+    localStorage.setItem('contacts', JSON.stringify(contacts));
+}
 
-let rootPath = "https://mysite.itvarsity.org/api/ContactBook/";
-let apiKey = checkApiKey();
-
-function checkApiKey(){
-    if (!localStorage.getItem("apiKey")) {
-        window.open("enter-api-key.html", "_self");
-    }
-    return localStorage.getItem("apiKey");
+function generateId() {
+    return Date.now();
 }
