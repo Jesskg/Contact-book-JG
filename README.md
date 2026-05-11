@@ -19,7 +19,7 @@ You can add, view, edit, and delete contacts. Each contact stores a first name, 
 - Click any contact to view their full details
 - Edit contact information
 - Delete contacts
-- Photos stored as base64 in localStorage — no server needed
+- Photos stored as base64 in localStorage - no server needed
 
 ---
 
